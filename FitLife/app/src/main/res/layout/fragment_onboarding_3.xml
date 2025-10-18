@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background_light">
+
+    <!-- Illustration -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="273dp"
+        android:layout_height="231dp"
+        app:srcCompat="@drawable/onbording_screen03" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_nutrition_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_nutrition_description"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:maxWidth="300dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_recommendations_title"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/foodFruits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/food_fruits"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:padding="4dp" />
+
+            <CheckBox
+                android:id="@+id/foodVegetables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/food_vegetables"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:padding="4dp" />
+
+            <CheckBox
+                android:id="@+id/foodProtein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/food_protein"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:padding="4dp" />
+
+            <CheckBox
+                android:id="@+id/foodWholeGrains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:padding="4dp"
+                android:text="@string/food_whole_grains"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nutrition_questions_title"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgDietPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbVeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diet_veg"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:layout_marginEnd="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbNonVeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diet_non_veg"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:layout_marginEnd="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbVegan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diet_vegan"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black" />
+    </RadioGroup>
+
+</LinearLayout>
